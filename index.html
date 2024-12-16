@@ -4,57 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leland's Portfolio</title>
-    <link rel="stylesheet" href=".assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
+    <header class="hero">
+        <h1>Leland Mitchell's Portfolio</h1>
     </header>
     
     <nav>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#my-work">My Work</a>
         <a href="#contact">Contact</a>
     </nav>
-    <about>
-        <h2>About Me</h2>
-        <p>I am Leland Mitchell. I am currently in a coding boot camp for Full Stack software developement.</p>
-    </about>
-    <projects>
-        <h2>Projects</h2>
+    <main>
+        <section class="about-me card" id="about" >I am Leland Mitchell. I am currently in a coding boot camp for Full Stack software developement.</section>
+        <section class="my-work card" id="my-work">
+            <section class="flex-item">
+                <section>
+                    <h4>First project coming soon</h4>
+                    <p class="run-buddy">This is my first project</p>
+                </section>
+                <section>
+                    <h4>Second project coming soon</h4>
+                     <p class="led-wall">This is my second project</p>
+                </section>
+                <section>
+                    <h4>Third project coming soon</h4>
+                    <p class="react-calc">This is my third project</p>
+                </section>
+                <section>
+                    <h4>Fourth project coming soon</h4>
+                    <p class="pastel-puzzles">This is my fourth project</p>
+                </section>
+                <section>
+                    <h4>Fifth project coming soon</h4>
+                    <p class="surf-report">This is my Fifth project</p>
+                </section>
+            </section>            
+        </section>
+        <section class="contact card" id="contact">
+            <address>
+            <a>Email: leland.as.mitchell2@gmail.com</a>
+            </address>
+        </section>
+
+
+    </main>
+    <div >
         
-        <section>
-            <header>First project coming soon</header> 
-            <img src="https://placehold.co/600x400" alt="coming soon">
-            <p>This is my first project</p>
-        </section>
-        <section>
-            <header>Second project coming soon</header>
-             <img src="https://placehold.co/600x400" alt="coming soon">
-             <p>This is my second project</p>
-        </section>
-        <section>
-            <header>Third project coming soon</header>
-            <img src="https://placehold.co/600x400" alt="coming soon">
-            <p>This is my third project</p>
-        </section>
-        <section>
-            <header>Fourth project coming soon</header>
-            <img src="https://placehold.co/600x400" alt="coming soon">
-            <p>This is my fourth project</p>
-        </section>
-        <section>
-            <header>Fifth project coming soon</header>
-            <img src="https://placehold.co/600x400" alt="coming soon">
-            <p>This is my Fifth project</p>
-        </section>
-    </projects>
-    <contact>
-        <h3>How to contact me</h3>
-        <section>
-            <header>Contact Info</header>
-            <p>Email: leland.as.mitchell2@gmail.com</p>
-        </section>
-    </contact>
+        
+    </div>
 </body>
 </html>

@@ -85,10 +85,52 @@
     margin-top: 20px;
     margin-bottom: 45px;
   }
+
+  .card {
+    position: relative;
+    border-left: 1px solid;
+    margin: 70px;
+    padding-left: 30px;
+    width: 66%;
+    left: 20%;
+}
+
+.about-me{
+    height: 30vh;
+    background-image: url("./background/20240908_135442.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-size: 25vh;
+    background-repeat: no-repeat;
+}
+  .about-me::before{
+    content: "ABOUT ME:";
+    font-size: 8vh;
+    position: absolute;
+    display: inline-block;
+    left: -200px;
+    width: 12vw;
+  }
   
+  .mywork{
+    height: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .my-work::before {
+    content: "MY WORK:";
+    font-size: 8vh;
+    position: absolute;
+    display: inline-block;
+    left: -200px;
+    width: 12vw
+  }
+
+
+
   .hero-banner {
     background: rgb(68, 88, 120);
-    background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+    background-image: url("./background/20240908_135442.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
     background-size: cover;
     background-position: center;
     background-blend-mode: soft-light;
@@ -157,12 +199,13 @@
   .flex-item {
     border: 5px solid var(--secondary);
     background-color: var(--primary);
-    color: var(--tertiary);
+    color: var(--light);
     min-height: 150px;
-    max-height: 150px;
+    max-height: 1000px;
     flex-basis: calc(50% - 1em);
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     padding: 0 0 20px 0;
     margin: 0.5em;
     text-decoration: none;
@@ -191,6 +234,21 @@
     font-size: 1.6rem;
   }
   
+  .contact{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact::before{
+    content: "CONTACT:";
+    font-size: 8vh;
+    position: absolute;
+    display: inline-block;
+    left: -215px;
+    width: 12vw
+  }
+
   .contact address {
     display: flex;
     flex-wrap: wrap;
@@ -222,23 +280,44 @@
   /* portfolio project images */
   /* TODO: Add portfolio project images here using background images*/
   .run-buddy {
-    
+    background-image: url("./background/samsung-memory.jpg");
+    height: 150px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
+
   }
   
   .led-wall {
-    
+    background-image: url("./background/cutting-board.jpg");
+    height: 150px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
   }
   
   .react-calc {
-    
+    background-image: url("./background/samsung-memory.jpg");
+    height: 150px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
   }
   
   .pastel-puzzles {
-    
+    background-image: url("./background/cutting-board.jpg");
+    height: 150px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
   }
   
   .surf-report {
-    
+    background-image: url("./background/samsung-memory.jpg");
+    height: 150px;
+    width: 300px;
+    background-position: center;
+    background-size: cover;
   }
   
   /* media queries */
@@ -278,4 +357,10 @@
   }
   
   /* TODO: add media query for a max-width of 768px */
-  
+  @media screen and (max-width: 768px) {
+    main{
+        flex-wrap: wrap;
+
+    }
+    
+  }
